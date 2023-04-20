@@ -1,0 +1,31 @@
+{
+  "name": "todo-list-backend",
+  "version": "1.0.0",
+  "description": "ToDo List Backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psicowar/ToDo-List-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psicowar/ToDo-List-Backend/issues"
+  },
+  "homepage": "https://github.com/Psicowar/ToDo-List-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.1.5",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
