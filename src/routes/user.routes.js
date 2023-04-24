@@ -1,10 +1,8 @@
-const userRouter = require("express").Router()
-const { ifUserExist, getAllUsers } = require("../controllers/user.controller")
+const userRoutes = require("express").Router()
+const { checkUser } = require("../controllers/user.controller")
+const { checkJwt } = require("../middleware/auth.middleware")
 
+userRoutes
+    .post("/check", checkJwt, checkUser)
 
-userRouter
-    .get("/signup", ifUserExist)
-    .post("/all,", getAllUsers)
-    .post("check", )
-
-module.exports = userRouter
+module.exports = userRoutes
